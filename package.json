@@ -1,0 +1,21 @@
+{
+  "name": "symptom_guide",
+  "version": "1.0.0",
+  "description": "An app to reveal the cause for your medical symptoms.",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaden Mathias",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.5",
+    "typescript": "^4.7.2"
+  }
+}
