@@ -1,0 +1,3 @@
+{"rule":"WHITESPACE_RULE","sentence":"^$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\QSymptom\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\QCovid Symptom Guide\\E$"}
