@@ -1,15 +1,14 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/header";
 import "./styles/variables.scss";
 import "./styles/index.scss";
+import { BrowserRouter as Router } from "react-router-dom";
+import App from "./App";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
 root.render(
-	<>
-		<Header />
-	</>
+	<Router>
+		<App />
+	</Router>
 );

@@ -44,6 +44,9 @@ module.exports = {
 	resolve: {
 		extensions: [".ts", ".tsx", ".js", ".scss", ".css", ".png"],
 	},
-	watch: false,
+	devServer: {
+		historyApiFallback: true,
+	},
+	watch: true,
 	mode: "development",
 };
