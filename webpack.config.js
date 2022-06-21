@@ -9,7 +9,8 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: "Covid Symptom Guide",
-			meta: { viewport: "width=device-width, initial-scale=1" },
+			inject: false,
+			template: "indextemplate.html",
 		}),
 	],
 	module: {

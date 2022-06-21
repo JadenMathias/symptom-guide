@@ -80,6 +80,16 @@ eval("/**\r\n * @license React\r\n * react-dom.development.js\r\n *\r\n * Copyri
 
 /***/ }),
 
+/***/ "./node_modules/react-dom/client.js":
+/*!******************************************!*\
+  !*** ./node_modules/react-dom/client.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\r\n\r\nvar m = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nif (false) {} else {\r\n  var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;\r\n  exports.createRoot = function(c, o) {\r\n    i.usingClientEntryPoint = true;\r\n    try {\r\n      return m.createRoot(c, o);\r\n    } finally {\r\n      i.usingClientEntryPoint = false;\r\n    }\r\n  };\r\n  exports.hydrateRoot = function(c, h, o) {\r\n    i.usingClientEntryPoint = true;\r\n    try {\r\n      return m.hydrateRoot(c, h, o);\r\n    } finally {\r\n      i.usingClientEntryPoint = false;\r\n    }\r\n  };\r\n}\r\n\n\n//# sourceURL=webpack://symptom_guide/./node_modules/react-dom/client.js?");
+
+/***/ }),
+
 /***/ "./node_modules/react-dom/index.js":
 /*!*****************************************!*\
   !*** ./node_modules/react-dom/index.js ***!
@@ -296,7 +306,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
   \***********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\nvar header_1 = __webpack_require__(/*! ./components/header */ \"./src/components/header.tsx\");\r\n__webpack_require__(/*! ./styles/variables.scss */ \"./src/styles/variables.scss\");\r\n__webpack_require__(/*! ./styles/index.scss */ \"./src/styles/index.scss\");\r\nReactDOM.render(React.createElement(React.Fragment, null,\r\n    React.createElement(header_1.default, null)), document.querySelector(\"#root\"));\r\n\n\n//# sourceURL=webpack://symptom_guide/./src/index.tsx?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nvar client_1 = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\r\nvar header_1 = __webpack_require__(/*! ./components/header */ \"./src/components/header.tsx\");\r\n__webpack_require__(/*! ./styles/variables.scss */ \"./src/styles/variables.scss\");\r\n__webpack_require__(/*! ./styles/index.scss */ \"./src/styles/index.scss\");\r\nvar container = document.getElementById(\"root\");\r\nvar root = (0, client_1.createRoot)(container);\r\nroot.render(React.createElement(React.Fragment, null,\r\n    React.createElement(header_1.default, null)));\r\n\n\n//# sourceURL=webpack://symptom_guide/./src/index.tsx?");
 
 /***/ })
 
