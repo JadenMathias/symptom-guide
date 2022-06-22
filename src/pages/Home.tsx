@@ -33,7 +33,7 @@ const Home = () => {
 				<div className={classes.h3}>{`Cases 🦠 ${cases}`}</div>
 				<div className={classes.h3}>{`Deaths ⚰️ ${deaths}`}</div>
 			</div>
-			<Link to="/screening">
+			<Link to="/symptom-guide/screening">
 				<button className={classes.btn}>
 					<span>Check Symptoms</span>
 				</button>
