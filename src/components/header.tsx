@@ -3,6 +3,7 @@ import classes from "./Header.module.scss";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import img from "../../public/images/smtp.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 	const [menuOpen, setMenuOpen] = React.useState(false);
@@ -38,10 +39,12 @@ const Header = () => {
 				>
 					<ul>
 						<li>
-							<a href="/home">Home</a>
+							<Link to="/">Home</Link>
 						</li>
 					</ul>
-					<button>Check Symptoms</button>
+					<Link to="/screening">
+						<button>Check Symptoms</button>
+					</Link>
 				</nav>
 				<div className={classes.header__content__toggle}>
 					{menuOpen ? (
