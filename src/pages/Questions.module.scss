@@ -1,0 +1,25 @@
+@import "../styles/variables.scss";
+
+.container {
+	background: transparent;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	height: calc(100vh - #{$headerHeight});
+}
+.title {
+	font-size: 2rem;
+	color: $dark;
+	margin-bottom: 20px;
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	background: $orangeL;
+	background: linear-gradient(90deg, $orangeL 0%, $orangeD 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	@include breakpoint(md) {
+		font-size: 3rem;
+	}
+}
